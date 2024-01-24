@@ -17,6 +17,10 @@
 ### Output :
 ![ig-home-page1(1)](https://github.com/adityaashinde/flutter-basics/assets/94387380/e0319151-564d-4152-8dc5-0e1be97a15e1)
 
+https://github.com/adityaashinde/flutter-basics/assets/94387380/17ef219f-474d-4849-91a7-6997e2060baf
+
+![social-app(3)](https://github.com/adityaashinde/flutter-basics/assets/94387380/6bd10572-e6b3-4e5f-b695-2079fdb6765d)
+
 ## #. Stateful-Assignment-1 (Table of 2)
 ### Output :
 ![stateful-assignment-1(1)](https://github.com/adityaashinde/flutter-basics/assets/94387380/549e72cb-b47a-4646-b990-dd56f814e081)
