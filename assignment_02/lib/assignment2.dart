@@ -7,9 +7,12 @@ class Assignment2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.amber,
         title: const Text("Assignment 02"),
+        centerTitle: true,
       ),
       body: SizedBox(
+        width: double.infinity,
         height: double.infinity,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
