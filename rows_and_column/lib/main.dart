@@ -16,26 +16,30 @@ class MainApp extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.amber,
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.red,
-            ),
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.green,
-            ),
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.blue,
-            )
-          ],
+        body: SizedBox(
+          height: double.infinity,
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.green,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue,
+              )
+            ],
+          ),
         ),
       ),
     );
