@@ -21,6 +21,16 @@ https://github.com/adityaashinde/flutter-basics/assets/94387380/17ef219f-474d-48
 
 ![social-app(3)](https://github.com/adityaashinde/flutter-basics/assets/94387380/6bd10572-e6b3-4e5f-b695-2079fdb6765d)
 
+## #. Indian-Flag
+### Output :
+![Screenshot (386)](https://github.com/adityaashinde/flutter-basics/assets/94387380/33a51577-8fcf-42b8-8ca8-a81caf5d8368)
+
+## #. Row and Column App
+### Output :
+![Screenshot (382)](https://github.com/adityaashinde/flutter-basics/assets/94387380/b0316b1d-c13b-4ff5-a6ee-c42b7a59af2f)
+
+![Screenshot (385)](https://github.com/adityaashinde/flutter-basics/assets/94387380/083b13f8-c430-4fb8-8b11-67937d5da5a0)
+
 ## #. Stateful-Assignment-1 (Table of 2)
 ### Output :
 ![stateful-assignment-1(1)](https://github.com/adityaashinde/flutter-basics/assets/94387380/549e72cb-b47a-4646-b990-dd56f814e081)
