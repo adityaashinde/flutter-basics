@@ -8,9 +8,29 @@ class ToggleBox extends StatefulWidget {
 }
 
 class _ToggleBoxState extends State<ToggleBox> {
+  bool box1Color = false;
+  bool box2Color = false;
+
+  Color setBox1Color() {
+    if (box1Color == false) {
+      return Colors.red;
+    } else {
+      return Colors.black;
+    }
+  }
+
+  Color setBox2Color() {
+    if (box2Color == false) {
+      return Colors.black;
+    } else {
+      return Colors.red;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade400,
       appBar: AppBar(
         title: const Text(
           "Toggle Box App",
@@ -22,63 +42,74 @@ class _ToggleBoxState extends State<ToggleBox> {
         backgroundColor: Colors.blueAccent.shade200,
         centerTitle: true,
       ),
-      body: Column(
+      body: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(
+          // First Column
+          Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Column(
-                children: [
-                  Container(
-                    height: 150,
-                    width: 150,
-                    color: Colors.red,
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: const Text(
-                      "Button 1",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontStyle: FontStyle.italic,
-                      ),
-                    ),
-                  ),
-                ],
+              Container(
+                height: 120,
+                width: 120,
+                color: setBox1Color(),
               ),
               const SizedBox(
-                width: 20,
+                height: 20,
               ),
-              Column(
-                children: [
-                  Container(
-                    height: 150,
-                    width: 150,
-                    color: Colors.black,
+              ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    if (box1Color == false) {
+                      box1Color = true;
+                    } else {
+                      box1Color = false;
+                    }
+                  });
+                },
+                child: const Text(
+                  "ColorBox 1",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontStyle: FontStyle.italic,
                   ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: const Text(
-                      "Button 2",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontStyle: FontStyle.italic,
-                      ),
-                    ),
-                  ),
-                ],
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            width: 30,
+          ),
+          // Second Column
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                height: 120,
+                width: 120,
+                color: setBox2Color(),
               ),
               const SizedBox(
-                width: 20,
-              )
+                height: 20,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    if (box2Color == false) {
+                      box2Color = true;
+                    } else {
+                      box2Color = false;
+                    }
+                  });
+                },
+                child: const Text(
+                  "ColorBox 2",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ),
             ],
           ),
         ],
