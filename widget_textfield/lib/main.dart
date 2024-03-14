@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:widget_textfield/portfilo.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +12,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Portfolio(),
+        body: TextfieldUI(),
       ),
     );
   }
@@ -51,7 +50,7 @@ class _TextfieldUIState extends State<TextfieldUI> {
       body: Column(
         children: [
           const SizedBox(
-            height: 22,
+            height: 100,
           ),
           TextField(
             controller: _nameTextEditingController,
@@ -81,6 +80,51 @@ class _TextfieldUIState extends State<TextfieldUI> {
             onSubmitted: (value) {
               print("Data Submitted = $value");
             },
+          ),
+          const SizedBox(
+            height: 50,
+          ),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "Enter Your Password",
+              border: InputBorder.none,
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+                borderSide: const BorderSide(
+                  color: Colors.deepPurple,
+                ),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+                borderSide: const BorderSide(
+                  color: Colors.black,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 60,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text(
+                  "RESET",
+                  style: TextStyle(
+                    fontSize: 17,
+                  ),
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text("SUBMIT",
+                    style: TextStyle(
+                      fontSize: 17,
+                    )),
+              ),
+            ],
           ),
         ],
       ),
